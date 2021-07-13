@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example: Layout</title>
+	<link rel="stylesheet" href="w3.css">
+	<script src="jayquery.js"></script>
+</head>
+<body>
+	<style>
+	body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	.header, .row, .footer{
+		margin-left:320px;
+	}
+	</style>
+	
+	<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+		<div class="w3-container">
+			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+				<i class="fa fa-remove"></i>
+			</a>
+			<img src="img/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+			<h4><b>PORTFOLIO</b></h4>
+			<p class="w3-text-grey">Template by W3.CSS</p>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+			<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+		</div>
+		<div class="w3-panel w3-large">
+			<i class="fa fa-facebook-official w3-hover-opacity"></i>
+			<i class="fa fa-instagram w3-hover-opacity"></i>
+			<i class="fa fa-snapchat w3-hover-opacity"></i>
+			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+			<i class="fa fa-twitter w3-hover-opacity"></i>
+			<i class="fa fa-linkedin w3-hover-opacity"></i>
+		</div>
+	</nav>
+	<!-- end of Sidebar/menu -->
+	
+    <div class="w3-container w3-padding-32 w3-dark-grey header">
+      <h1>Chania</h1>
+    </div>
+
+    <div class="row">
+		<div class="content-left col-3 col-s-3 menu">
+			
+		</div>
+		
+		<div class="content-body col-6 col-s-9">
+			<!-- About Card -->
+			<div class="about-card">
+				<div class="w3-col l4">
+					<!-- About Card -->
+					<div class="w3-card w3-margin w3-margin-top">
+							<img src="img/avatar_g.jpg" style="width:100%">
+						<div class="w3-container w3-white">
+							<h4><b>My Name</b></h4>
+							<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+						</div>
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<!-- About Card -->
+					<div class="w3-card w3-margin w3-margin-topw3-white">
+						<img src="img/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+						<div class="w3-container w3-black">
+							<h4>My Name</h4>
+							<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="w3-col l4">
+					<!-- Inspiration -->
+					<div class="w3-white w3-margin">
+						<div class="w3-container w3-padding w3-black">
+							<h4>Inspiration</h4>
+						</div>
+						<div class="w3-row-padding w3-white">
+							<div class="w3-col s6">
+								<p><img src="img/jeans.jpg" alt="Jeans" style="width:100%"></p>
+								<p><img src="img/team1.jpg" alt="Jeans" style="width:100%"></p>
+							</div>
+							<div class="w3-col s6">
+								<p><img src="img/avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+								<p><img src="img/team4.jpg" alt="Jeans" style="width:100%"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of About Card -->
+			
+			<!-- About architect -->
+			<div class="w3-row-padding">
+
+				<div class="w3-col l3 m6 w3-margin-bottom">
+					<div class="w3-display-container">
+						<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+							<img src="img/house5.jpg" alt="House" style="width:100%">
+					</div>
+				</div>
+
+				<div class="w3-col l3 m6 w3-margin-bottom">
+					<div class="w3-display-container">
+						<div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+							<img src="img/house4.jpg" alt="House" style="width:100%">
+					</div>
+				</div>
+
+			</div>
+			<!-- end of About architect -->
+
+			<!-- Product grid -->
+			<div class="w3-row w3-grayscale">
+
+				<div class="w3-col l3 s6">
+					<div class="w3-container">
+						<img src="img/jeans1.jpg" style="width:100%">
+						<p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+					</div>
+				</div>
+
+				<div class="w3-col l3 s6">
+					<div class="w3-container">
+						<div class="w3-display-container">
+							<img src="img/jeans2.jpg" style="width:100%">
+							<span class="w3-tag w3-display-topleft">New</span>
+							<div class="w3-display-middle w3-display-hover">
+								<button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+							</div>
+						</div>
+						<p>Mega Ripped Jeans<br><b>$19.99</b></p>
+					</div>
+				</div>
+
+
+				<div class="w3-col l3 s6">
+					<div class="w3-container">
+						<div class="w3-display-container">
+							<img src="img/jeans3.jpg" style="width:100%">
+							<span class="w3-tag w3-display-topleft">Sale</span>
+							<div class="w3-display-middle w3-display-hover">
+								<button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+							</div>
+						</div>
+						<p>Mega Ripped Jeans<br><b>$19.99</b></p>
+					</div>
+				</div>
+				<div class="w3-col l3 s6">
+					<div class="w3-container">
+						<img src="img/jeans4.jpg" style="width:100%">
+						<p>Mega Ripped Jeans<br><b>$19.99</b></p>
+					</div>
+				</div>
+
+			</div>
+			<!-- end of product grid -->
+
+			<!-- About Section -->
+			<div class="w3-row w3-padding-64" id="about">
+				<div class="w3-col m6 w3-padding-large w3-hide-small">
+					<img src="img/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="100%" height="100%">
+				</div>
+
+				<div class="w3-col m6 w3-padding-large">
+					<h1 class="w3-center">About Catering</h1><br>
+					<h5 class="w3-center">Tradition since 1889</h5>
+					<p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+					<p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<!-- end of About Section -->
+
+			<!-- Pagination -->
+			<div class="w3-center w3-padding-32">
+				<div class="w3-bar">
+					<a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+					<a href="#" class="w3-bar-item w3-black w3-button">1</a>
+					<a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+					<a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+					<a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+					<a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+				</div>
+			</div>
+			<!-- end of Pagination -->
+
+		</div>
+		<!-- end of content div -->
+
+	</div>
+	<!-- end of row div -->
+	
+	<!-- FOOTER -->
+	<div class="w3-container w3-padding-32 w3-dark-grey footer">
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<h3>FOOTER</h3>
+				<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				<p>Powered by <a href="#" target="_blank">Jap CSS</a></p>
+			</div>
+
+			<div class="w3-third">
+				<h3>BLOG POSTS</h3>
+				<ul class="w3-ul w3-hoverable">
+					<li class="w3-padding-16">
+						<img src="img/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+						<span class="w3-large">Lorem</span><br>
+						<span>Sed mattis nunc</span>
+					</li>
+					<li class="w3-padding-16">
+						<img src="img/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+						<span class="w3-large">Ipsum</span><br>
+						<span>Praes tinci sed</span>
+					</li> 
+				</ul>
+			</div>
+
+			<div class="w3-third">
+				<h3>POPULAR TAGS</h3>
+				<p>
+				<span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+				<span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+				<span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+				<span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+				<span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	<!-- end FOOTER -->
+	
+</body>
+</htm>
+
